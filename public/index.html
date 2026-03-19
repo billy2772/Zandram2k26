@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zantram 2K26 - IT Symposium</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">ZANTRAM <span class="highlight">2K26</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Home Section (Hero) -->
+    <section id="home" class="hero">
+        <div class="glow-bg"></div>
+        <div class="hero-content">
+            <h1 class="glitch" data-text="ZANTRAM 2K26">ZANTRAM 2K26</h1>
+            <h2 class="subtitle">1st IT Department Symposium</h2>
+            <p class="tagline">Innovate &bull; Code &bull; Create</p>
+            <div class="countdown" id="countdown">
+                <div><span id="days">00</span><p>Days</p></div>
+                <div><span id="hours">00</span><p>Hours</p></div>
+                <div><span id="minutes">00</span><p>Minutes</p></div>
+                <div><span id="seconds">00</span><p>Seconds</p></div>
+            </div>
+            <a href="#register" class="cyber-btn">Register Now <span class="btn-glitch"></span></a>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events-section">
+        <h2 class="section-title">Symposium <span class="highlight">Events</span></h2>
+        
+        <div class="events-category">
+            <h3 class="category-title">Technical Events</h3>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="card-inner">
+                        <h4>Paper Presentation</h4>
+                        <p>Present your innovative ideas and research papers.</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="card-inner">
+                        <h4>Coding Challenge</h4>
+                        <p>Solve complex algorithmic problems.</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="card-inner">
+                        <h4>Debugging Contest</h4>
+                        <p>Find and fix bugs in given code snippets.</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="card-inner">
+                        <h4>Web Development</h4>
+                        <p>Build responsive web applications on spot.</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="card-inner">
+                        <h4>AI Quiz</h4>
+                        <p>Test your knowledge in Artificial Intelligence.</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="card-inner">
+                        <h4>Hackathon</h4>
+                        <p>24-hour coding marathon to solve real world problems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="events-category">
+            <h3 class="category-title">Non-Technical Events</h3>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="card-inner">
+                        <h4>Quiz Competition</h4>
+                        <p>General knowledge and pop culture trivia.</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="card-inner">
+                        <h4>Photography Contest</h4>
+                        <p>Capture the best moments of the symposium.</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="card-inner">
+                        <h4>Gaming Tournament</h4>
+                        <p>Compete in popular multiplayer games.</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="card-inner">
+                        <h4>Treasure Hunt</h4>
+                        <p>Solve clues to find the hidden treasure.</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="card-inner">
+                        <h4>Meme Contest</h4>
+                        <p>Create the funniest IT-related memes.</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="card-inner">
+                        <h4>Short Film Contest</h4>
+                        <p>Showcase your filmmaking skills.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="registration-section">
+        <h2 class="section-title">Secure Your <span class="highlight">Access</span></h2>
+        
+        <div class="registration-container">
+            <form id="registrationForm" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label>College Name</label>
+                    <input type="text" id="collegeName" name="collegeName" required placeholder="Enter your college">
+                </div>
+                <div class="form-group">
+                    <label>Department</label>
+                    <input type="text" id="department" name="department" required placeholder="Enter your department">
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                </div>
+                
+                <div class="form-group">
+                    <label>Select Events</label>
+                    <div class="checkbox-grid">
+                        <label><input type="checkbox" name="selectedEvents" value="Paper Presentation"> Paper Presentation</label>
+                        <label><input type="checkbox" name="selectedEvents" value="Coding Challenge"> Coding Challenge</label>
+                        <label><input type="checkbox" name="selectedEvents" value="Debugging Contest"> Debugging Contest</label>
+                        <label><input type="checkbox" name="selectedEvents" value="Web Development"> Web Development</label>
+                        <label><input type="checkbox" name="selectedEvents" value="AI Quiz"> AI Quiz</label>
+                        <label><input type="checkbox" name="selectedEvents" value="Hackathon"> Hackathon</label>
+                        <label><input type="checkbox" name="selectedEvents" value="Quiz Competition"> Quiz Competition</label>
+                        <label><input type="checkbox" name="selectedEvents" value="Photography Contest"> Photography Contest</label>
+                        <label><input type="checkbox" name="selectedEvents" value="Gaming Tournament"> Gaming Tournament</label>
+                        <label><input type="checkbox" name="selectedEvents" value="Treasure Hunt"> Treasure Hunt</label>
+                        <label><input type="checkbox" name="selectedEvents" value="Meme Contest"> Meme Contest</label>
+                        <label><input type="checkbox" name="selectedEvents" value="Short Film Contest"> Short Film Contest</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Team Size (Optional)</label>
+                    <input type="number" id="teamSize" name="teamSize" min="1" max="5" placeholder="1-5">
+                </div>
+
+                <div class="fee-display">
+                    <h3>Total Registration Fee: <span class="highlight">₹300</span></h3>
+                    <p>Flat fee for participating in any number of events.</p>
+                </div>
+
+                <!-- Payment Section -->
+                <div class="payment-section" id="payment">
+                    <h3>Payment Gateway</h3>
+                    <div class="qr-container">
+                        
+                        <!-- Placeholder for QR code -->
+                        <div class="qr-placeholder">
+                        
+                        </div>
+                        <p class="upi-id">UPI ID: zantram2k26@ybl</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Transaction ID (UTR Number)</label>
+                        <input type="text" id="transactionId" name="transactionId" required placeholder="Enter 12-digit UTR number">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Upload Payment Screenshot</label>
+                        <input type="file" id="screenshot" name="screenshot" accept="image/png, image/jpeg, image/jpg" required>
+                        <small>Only JPG/PNG allowed.</small>
+                    </div>
+                </div>
+
+                <button type="submit" class="cyber-btn w-100" id="submitBtn">Submit Registration <span class="btn-glitch"></span></button>
+            </form>
+            <div id="formMessage" class="hidden"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <h3 class="logo">ZANTRAM <span class="highlight">2K26</span></h3>
+            <p>For any queries, contact us at info@zantram.com | +91 9876543210</p>
+            <p>&copy; 2026 Zantram IT Symposium. All Rights Reserved.</p>
+            <a href="admin.html" class="admin-link">Admin Login</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
