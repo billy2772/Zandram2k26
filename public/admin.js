@@ -197,8 +197,30 @@ searchInput.addEventListener('input', (e) => {
 });
 
 // Export Data
-document.getElementById('exportBtn').addEventListener('click', () => {
-    window.location.href = '/api/admin/export';
+document.getElementById('exportBtn').addEventListener('click', async () => {
+    try {
+        const response = await fetch('/api/admin/export', {
+            headers: { 'Authorization': 'Bearer ' + currentToken }
+        });
+        
+        if (response.ok) {
+            const blob = await response.blob();
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = url;
+            a.download = 'Zantram2K26_Registrations.xlsx';
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            a.remove();
+        } else {
+            alert('Export failed due to Unauthorized Access or Server Error');
+        }
+    } catch (err) {
+        console.error('Export Error:', err);
+        alert('An error occurred during export');
+    }
 });
 
 // Modal Logic
